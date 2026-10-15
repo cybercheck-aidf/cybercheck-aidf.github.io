@@ -1648,3 +1648,14 @@ html[data-theme=dark] {
   .cc-theme-select { width: 80px; padding-inline: 5px; }
   .cc-menu { padding-inline: 0; font-size: 12px; }
 }
+
+/* Compact theme icon, with explicit choices in a keyboard-accessible popover. */
+.cc-theme-control { position: relative; }
+.cc-theme-trigger { display: inline-grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid #6b8793; border-radius: 50%; background: var(--ifm-background-color); color: var(--cc-navy); cursor: pointer; }
+.cc-theme-trigger:hover { background: #e9f0ed; }
+.cc-theme-options { position: absolute; top: calc(100% + 10px); right: 0; z-index: 60; width: 172px; padding: 6px; border: 1px solid #b9cbc5; border-radius: 10px; background: var(--ifm-background-color); box-shadow: 0 12px 32px #102b3125; }
+.cc-theme-options button { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 44px; padding: 10px; border: 0; border-radius: 5px; background: transparent; color: var(--cc-navy); font-size: 14px; text-align: left; cursor: pointer; }
+.cc-theme-options button:hover, .cc-theme-options button[aria-pressed=true] { background: #e6eee7; }
+.cc-theme-check { width: 16px; margin-left: auto; color: var(--cc-teal); }
+[data-theme=dark] .cc-theme-options { border-color: #536c78; }
+[data-theme=dark] .cc-theme-trigger:hover, [data-theme=dark] .cc-theme-options button:hover, [data-theme=dark] .cc-theme-options button[aria-pressed=true] { background: #23463f; }

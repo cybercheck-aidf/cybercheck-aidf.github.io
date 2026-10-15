@@ -192,9 +192,14 @@ applies only at desktop widths; mobile remains flat with horizontal diagram
 scrolling. The downloadable SVG stays static. Browser checks verified all six
 animations pause/resume together and mobile reflow at 390px with a 44px control.
 
-Theme preference now exposes System, Light and Dark through a labelled native
-select. System passes null to Docusaurus, removing the saved override and following
+Theme preference exposes System, Light and Dark through a compact icon
+button and a labelled popover of choices. System passes null to Docusaurus, removing the saved override and following
 the OS, including subsequent preference changes. Manual light/dark choices are
 persisted by Docusaurus. Checked System against the current light OS preference,
 manual light/dark selection, dark persistence after reload and no page overflow
 at 320, 390, 1024 and 1280px. Switching the OS setting itself was not exercised.
+
+Icon preference control: monitor = System, sun = Light, moon = Dark. Text labels
+and a selected checkmark appear when opened; the trigger announces the current
+choice. Verified dark selection, return to System, keyboard activation, Escape
+returning focus, and an open popover fitting at 320px without document overflow.

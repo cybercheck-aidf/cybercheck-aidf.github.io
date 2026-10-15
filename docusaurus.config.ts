@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 // GitHub Pages provides its actual URL, including a project path or custom domain.
 const defaultUrl = process.env.NODE_ENV === 'production'
-  ? 'https://mashmllo.github.io/cybercheck.aidf.sg/'
+  ? 'https://cybercheck-aidf.github.io/'
   : 'http://localhost:3000/';
 const deploymentUrl = new URL(process.env.DEPLOYMENT_URL ?? defaultUrl);
 const deploymentPath = deploymentUrl.pathname.replace(/\/$/, '') + '/';

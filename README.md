@@ -27,7 +27,7 @@ npm run serve
 
 The production build is written to `build/`, ready for static hosting. Configure
 the host to serve that directory. Production builds default to
-`https://mashmllo.github.io/cybercheck.aidf.sg/`; the development server uses `/`. Set `DEPLOYMENT_URL` to override the canonical URL
+`https://cybercheck-aidf.github.io/`; the development server uses `/`. Set `DEPLOYMENT_URL` to override the canonical URL
 and project base path; the GitHub Pages workflow supplies this automatically.
 
 ## Project structure
@@ -101,14 +101,14 @@ start deployment. It also supports manual runs from GitHub Actions.
 
 One-time setup:
 
-1. Open https://github.com/mashmllo/cybercheck.aidf.sg/settings/pages.
+1. Open https://github.com/cybercheck-aidf/cybercheck-aidf.github.io/settings/pages.
 2. Under **Build and deployment → Source**, select **GitHub Actions**.
 3. Commit and push the website source, package lockfile and workflow to `main`.
 4. Open the repository's **Actions** tab and watch **Build and deploy GitHub Pages**.
    The deployment job and Pages settings show the actual published URL.
 
 Without a custom domain, the expected address is
-https://mashmllo.github.io/cybercheck.aidf.sg/. The workflow reads the configured
+https://cybercheck-aidf.github.io/. The workflow reads the configured
 Pages URL, so it also handles a custom domain configured in Pages settings.
 The repository name alone does not configure `cybercheck.aidf.sg` as a domain.
 Using that domain additionally requires control of its DNS, the matching GitHub
@@ -123,7 +123,7 @@ available for the repository's visibility and GitHub plan.
 To check the project-path build locally:
 
 ```sh
-DEPLOYMENT_URL=https://mashmllo.github.io/cybercheck.aidf.sg/ npm run build
+DEPLOYMENT_URL=https://cybercheck-aidf.github.io/ npm run build
 npm run serve
 ```
 
