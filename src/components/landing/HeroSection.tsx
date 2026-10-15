@@ -20,19 +20,18 @@ export default function HeroSection({
             your <span>cyber risk.</span>
           </h1>
           <p className="cc-lead">
-            See how potential security gaps could affect your operations—and
-            what to review next.
+            Understand how security gaps could affect your SME—and what to
+            review next.
           </p>
           <p className="cc-hero-description">
-            CyberCheck is a cyber-risk platform for small and medium-sized
-            enterprises (SMEs). It brings your business context, systems and
-            possible attack scenarios into one assessment workflow.
+            CyberCheck connects your business context, systems and attack
+            scenarios in one cyber-risk assessment workflow.
           </p>
           <div className="cc-actions">
             <a
               className="cc-btn"
               href={WAITLIST}
-              aria-describedby="hero-waitlist-purpose hero-availability"
+              aria-describedby="hero-waitlist-purpose"
             >
               Join the waitlist <Arrow />
             </a>
@@ -40,32 +39,15 @@ export default function HeroSection({
               See how it works <Arrow />
             </a>
           </div>
-          <p id="hero-waitlist-purpose" className="cc-cta-note">
-            Get updates on early access, pilot opportunities and future
-            demonstrations.
+          <p id="hero-waitlist-purpose" className="cc-hero-waitlist-note">
+            Register interest in early access and pilots. Opens Google Forms.
           </p>
-          <p id="hero-availability" className="cc-availability">
-            Participation details are being finalised. Joining registers
-            interest; it does not guarantee access.
-          </p>
-          <p className="cc-cta-note cc-form-hint">
-            Work email + organisation name · Google Form · Other profile
-            questions optional
-          </p>
-          <a
-            className="cc-partner-link cc-text-link"
-            href="#participate"
-            onClick={onPartnerSelect}
-          >
-            Partner with CyberCheck <Arrow />
-          </a>
-          <a className="cc-video-link" href="#demo">
-            <span className="cc-play" aria-hidden="true">
-              ▶
-            </span>{" "}
-            See CyberCheck in action{" "}
-            <span className="cc-subtle">Platform walkthrough</span>
-          </a>
+          <div className="cc-hero-support-links">
+            <a href="#join">Waitlist details</a>
+            <a href="#participate" onClick={onPartnerSelect}>
+              Explore partnerships <Arrow />
+            </a>
+          </div>
         </div>
         <ExposureDiagram />
       </div>

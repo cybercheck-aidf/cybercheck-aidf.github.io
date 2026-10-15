@@ -187,19 +187,20 @@ The inline ExposureMap keeps a static connection path beneath a sequential
 highlight. Each of six connections gets a two-second slot in a repeating
 12-second cycle. ExposureDiagram owns pause/resume state; the control pauses
 all highlights without removing the underlying information. Reduced-motion
-preferences disable the highlights and perspective. The 5-degree inward tilt
+preferences disable the highlights and perspective. The 8-degree inward tilt
 applies only at desktop widths; mobile remains flat with horizontal diagram
 scrolling. The downloadable SVG stays static. Browser checks verified all six
 animations pause/resume together and mobile reflow at 390px with a 44px control.
 
-Theme preference exposes System, Light and Dark through a compact icon
-button and a labelled popover of choices. System passes null to Docusaurus, removing the saved override and following
+Theme preference cycles System → Light → Dark → System with each press of a
+compact icon button. System passes null to Docusaurus, removing the saved override and following
 the OS, including subsequent preference changes. Manual light/dark choices are
 persisted by Docusaurus. Checked System against the current light OS preference,
 manual light/dark selection, dark persistence after reload and no page overflow
 at 320, 390, 1024 and 1280px. Switching the OS setting itself was not exercised.
 
-Icon preference control: monitor = System, sun = Light, moon = Dark. Text labels
-and a selected checkmark appear when opened; the trigger announces the current
-choice. Verified dark selection, return to System, keyboard activation, Escape
-returning focus, and an open popover fitting at 320px without document overflow.
+Icon preference control: half-filled circle = System, sun = Light, moon = Dark.
+The borderless button keeps a 44px target with a 24px icon.
+The accessible label announces the current choice and the next choice; a status
+message announces the selected preference. Verified the full cycle with click,
+Enter and Space, and confirmed the dropdown is removed. Typecheck and build pass.
