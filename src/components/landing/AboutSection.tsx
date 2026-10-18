@@ -1,3 +1,5 @@
+import BusinessScenarios from "./BusinessScenarios";
+
 export default function AboutSection() {
   return (
     <section id="about" className="cc-section">
@@ -23,48 +25,7 @@ export default function AboutSection() {
           </p>
         </div>
       </div>
-      <div className="cc-shell cc-example" aria-labelledby="example-title">
-        <div className="cc-example-heading">
-          <h3 id="example-title">
-            What could this mean for a business like yours?
-          </h3>
-          <p>
-            Illustrative example · not a CyberCheck finding or customer case
-            study.
-          </p>
-        </div>
-        <div className="cc-questions">
-          <article>
-            <span className="cc-index">01 / BUSINESS DEPENDENCY</span>
-            <h4>Your orders depend on a shared system.</h4>
-            <p>
-              Your team uses the same online system to receive orders and
-              coordinate deliveries.
-            </p>
-          </article>
-          <article>
-            <span className="cc-index">02 / POSSIBLE DISRUPTION</span>
-            <h4>What if access were compromised?</h4>
-            <p>
-              Unauthorised access could interrupt order handling or expose
-              customer information.
-            </p>
-          </article>
-          <article>
-            <span className="cc-index">03 / NEXT QUESTION</span>
-            <h4>What protection needs a closer look?</h4>
-            <p>
-              Review who has access, how accounts are protected and how
-              operations would continue if the system became unavailable.
-            </p>
-          </article>
-        </div>
-        <p className="cc-example-note">
-          CyberCheck helps structure this kind of discussion around your
-          organisation’s context. Findings need review; they do not guarantee
-          security.
-        </p>
-      </div>
+      <BusinessScenarios />
     </section>
   );
 }

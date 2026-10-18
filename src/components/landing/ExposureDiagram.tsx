@@ -16,7 +16,7 @@ export default function ExposureDiagram() {
     >
       <div className="cc-exposure-heading">
         <div>
-          <p className="cc-eyebrow">BUSINESS CONTEXT → CYBER EXPOSURE</p>
+          <p className="cc-eyebrow">CYBERCHECK / EXPOSURE MODEL</p>
           <h2 id="exposure-title">See how exposure connects.</h2>
         </div>
         <span className="cc-exposure-badge">ILLUSTRATIVE SCENARIO</span>
@@ -49,7 +49,7 @@ export default function ExposureDiagram() {
         </a>
       </div>
       <figcaption className="cc-exposure-caption">
-        <strong>Understand the connections. Review what matters.</strong>
+        <strong>Business dependency → Possible exposure → Review priority</strong>
         <span>
           An illustrative model of systems and dependencies—not a live
           assessment or a verified finding.
